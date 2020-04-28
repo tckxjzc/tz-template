@@ -57,7 +57,6 @@ export const plugins = [
     new webpack.DefinePlugin({
         'DEVELOPMENT': JSON.stringify(argv.dev)
     }),
-    new webpack.NamedModulesPlugin(),
     ...pluginList
 ];
 

@@ -1,3 +1,4 @@
+#!/bin/bash
 cd ../../
 webpackList=(
   webpack
@@ -36,7 +37,6 @@ pluginList=(
 
 otherList=(
   autoprefixer
-  browser-sync
   commander
   del
   node-sass

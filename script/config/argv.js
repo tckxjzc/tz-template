@@ -6,10 +6,10 @@ program
     //是否为开发者模式，default
     .option('-d,--dev', 'enabled dev mode',false)
     .option('-p,--port <number>', 'server port','8070')
-    .option('--del <number>', 'delete old files',false)
-    .option('--copy <number>', 'copy static folder',false)
+    .option('--del', 'delete old files',false)
+    .option('--copy', 'copy static folder',false)
     .option('--static', 'only start static server',false)
-    .option('--hash <number>', 'filename enabled hash',false)
+    .option('--hash', 'filename enabled hash',false)
     //过滤entry,仅包含指定的entry，多个用','分割
     .option('-e,--entry <item>', 'entry',(value)=>value.split(','),[]);
 program.parse(process.argv);
